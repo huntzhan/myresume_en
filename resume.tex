@@ -1,0 +1,136 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.80}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
+\newcommand{\projectsubheading}[2]{
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & \textit{#2} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+\textbf{\large Zhan Haoxun}  & 135.7032.2748 (cell)\\
+                             & programmer.zhx@gmail.com\\
+                             & http://haoxun.org\\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+
+\resheading{Education}
+\begin{itemize}
+\item
+  \ressubheading{South China University of Technology}{Guangzhou, China}{Undergraduate of Software Engineering}{Sep. 2011 - Jul. 2015}
+\end{itemize}
+
+
+\resheading{Work Experience}
+\begin{itemize}
+\item
+	\ressubheading{Tencent, Inc.}{Shenzhen, China}{Internship of Technology and Engineering Group(TEG)}{Jul. 2014 - Sep. 2014}
+    \begin{itemize}
+      \resitem{Worked on an internship project with the theme of figuring out the hot topics of Weibo.
+      The project consists of five components: data landing, spam filtering, topic clustering, sub-topic mining and web presenting.
+      I was responsible for two components, data landing and sub-topic mining.
+      As a technical leader of the team, I've maked suggestion and decision on the design of the project,
+      and things such as language style guide, toolchain, autotool and test framework.}
+    \end{itemize}
+
+\end{itemize}
+
+
+\resheading{Skills}
+\begin{description}
+
+\item[Python:] Intermediate level, two years experience.
+Carefully studied the official \textit{language reference}, several \textit{PEPs} and books such as \textit{Python Cookbook}.
+Familiar with the standard library, coding convention and development tools.
+Experience developing several personal projects(\textit{e.g.}, \textit{GeekCMS}, \textit{GoogleTranslateAPI} and \textit{MyGoogleDict}) in python.
+
+\item[C++:] Intermediate level, one year experience. Carefully studied \emph{C++ Primer 5ed}, \emph{Google C++ Style Guide}
+and some materials in \textit{cppreference.com}.
+Familiar with features of \textit{C++11}, the standard library and object-oriented paradigm of C++.
+Experience developing projects(\textit{intern project} and \textit{in-school project}) in collaboration.
+
+\item[Operating Systems:] Long-term user of \textit{OS X} and \textit{Ubuntu}. Experience with command-line interface and shell.
+
+\item[Others:] Experience in \textit{Vim} and {Git}.
+
+\end{description}
+
+
+\resheading{Personal Projects}
+\begin{itemize}
+\item
+  \projectsubheading{GeekCMS}{Nov. 2013 - Apr. 2014}
+    \begin{itemize}
+      \resitem{A lightweight framework for static site development.}
+    \end{itemize}
+
+\item
+  \projectsubheading{GoogleTranslateAPI}{Jan. 2014 - Feb. 2014}
+    \begin{itemize}
+      \resitem{A Python API of google translation service by simulating browser interaction of \textit{translate.google.com}.}
+    \end{itemize}
+
+\item
+  \projectsubheading{MyGoogleDict}{Jan. 2014 - Feb. 2014}
+    \begin{itemize}
+      \resitem{A command-line interface of google translation service, with the features of multi-language support, TTS and history recording.}
+    \end{itemize}
+
+\end{itemize}
+
+
+\resheading{Team Projects}
+\begin{itemize}
+\item
+  \projectsubheading{ShareDoc}{Sep. 2013 - Dec. 2013}
+    \begin{itemize}
+      \resitem{A file sharing site based on \textit{Django} framework.}
+    \end{itemize}
+
+\item
+  \projectsubheading{Q-Chatbot}{Jun. 2014 - Jul. 2014}
+    \begin{itemize}
+      \resitem{A chatbot project based on \textit{Qrobot} hardware.}
+    \end{itemize}
+
+\item
+  \projectsubheading{Hot topic mining on Weibo}{Jul. 2014 - Sep. 2014}
+    \begin{itemize}
+      \resitem{An Internship project with the theme realted to data mining.}
+    \end{itemize}
+
+\end{itemize}
+
+
+\end{document}
